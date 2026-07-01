@@ -1,0 +1,22 @@
+# Render build cache - non necessario con Docker (gestito dal Dockerfile)
+.dockerignore
+
+# Mantieni questa riga perché è in .gitignore originale
+*.rbc
+capybara-*.html
+.rspec
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/storage/*
+!/storage/.keep
+.byebug_history
+node_modules/
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+.env
+config/master.key
+Dockerfile.dev
+.dockerignore
