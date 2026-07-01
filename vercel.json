@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "buildCommand": "npm install && npm run build:vercel",
+  "outputDirectory": "public",
+  "routes": [
+    { "src": "/bundle.js", "dest": "/bundle.js" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
