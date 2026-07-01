@@ -35,7 +35,7 @@
     "start:development": "nodemon -r dotenv/config ./bin/www",
     "start:production": "node ./bin/www",
     "build": "echo 'Building....'",
-    "build:vercel": "webpack --config webpack.config.vercel.js"
+    "build:vercel": "NODE_OPTIONS=--openssl-legacy-provider webpack --config webpack.config.vercel.js"
   },
   "repository": {
     "type": "git",

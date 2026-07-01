@@ -31,3 +31,5 @@ bundle.js
 bundle.js.map
 
 .vscode
+.vercel
+public/bundle.js
