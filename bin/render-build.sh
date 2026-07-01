@@ -2,7 +2,10 @@
 # exit on error
 set -o errexit
 
-bundle install
+# Skip development/test gems (capybara, selenium, chromedriver cause build failures
+# on Render because they try to download Chrome binaries)
+bundle config set without 'development test'
+bundle install --jobs 4 --retry 3
 npm install
 npm run build
 bundle exec rake assets:precompile
